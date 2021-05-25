@@ -1,6 +1,6 @@
 import React, {useState,useEffect} from "react"; 
 import './styles.css';
-import shop from '../../images/shop.png';
+
 import arrowleft from '../../icons/arrowleft.svg';
 import arrowright from '../../icons/arrowright.svg'; 
 import Select from '../filters/select/select'; 
@@ -29,27 +29,29 @@ function Home(){
     return(
 <div className="content-home"> 
         <div className="content-img">
-                <img  className="img" src={shop} alt="" />
+          
             </div> 
     
            <div className="content-filter">
-                <span className="pagination">16 de 32</span>
-                <hr />
-                <span className="orderBy">Filter by: </span>
+                <p className="pagination">16 de 32</p>
+                <div className="content-form">
+                              <p className="orderBy">Filter by: </p>
                 <form action="" className="form-flex">
                     <Select/>
                     <Select/>
                     <button className="btn-filter">Clear</button>
-                </form>
-                <div className="content-arrows sup">
+                </form>  
+                </div>   
+
+                <div className="content-arrows">
                 <img src={arrowleft} alt="icon-arrow" className="arrow-sup" />
                 <img src={arrowright} alt="icon-arrow" className="arrow-sup" /> 
                 </div>
 
             </div>
-                 <div className="line sup"></div>
+       
              <Product articles={items}/> 
-            <div className="line inf"></div>
+ 
             <div className="content-inf">
                 <span className="pagination-inf">16 de 32</span>
                 <div className="content-arrows inf-arrow">

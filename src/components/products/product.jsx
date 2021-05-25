@@ -7,7 +7,7 @@ function Product({articles}){
         {articles.map ((product)=>{
                return(
                    <div className="product-card">
-                       <img src={product.img.url} alt={product.name} />
+                       <img className="product-card-img" src={product.img.url} alt={product.name} />
                        <h5 className="category">{product.category}</h5>
                        <h6 className="item">{product.name}</h6> 
                        <h6 className="item">{product.cost}</h6> 
