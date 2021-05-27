@@ -139,5 +139,33 @@
     width: 300px;
     height: 580px;
   }
+  @media (max-width: 500px){
+    .menu-desplazable{
+   background-color: red;
+    width: 58%;
+  }
+  }
 
+  /* @media (max-width: 764px) {
+    .menu-desplazable{
+      transform: translate(142%);
+      width: 40%;
+    }
+    #desplegar:checked ~ .menu-desplazable {
+      transform: translate(43% , 6.6%);
+  }
+
+  @media (max-width: 414px){
+    .menu-desplazable{
+   
+    width: 43%;
+  }
+  }
+  @media (max-width: 320px){
+    .menu-desplazable{
+   
+    width: 50%;
+  }
+  }
   
+  } */

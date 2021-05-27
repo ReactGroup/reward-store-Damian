@@ -1,10 +1,11 @@
 import React, {useState,useEffect} from "react"; 
 import './styles.css';
-
+import Menu from '../menu/menu'
 import arrowleft from '../../icons/arrowleft.svg';
 import arrowright from '../../icons/arrowright.svg'; 
 import Select from '../filters/select/select'; 
-import Product from '../products/product'
+import Product from '../products/product'; 
+import Footer from '../footer/footer'
 function Home(){
     let articles = ["All Categories", "Phones", "Laptops", "Audio", "Monitors", "Accesories", "Gaming", "Tables & E-readers", "Drones", "Phone Accesories"];
     let [items,setItems] = useState([]); //HOOK DE PRODUCTOS SELECCIONADOS
@@ -27,31 +28,23 @@ function Home(){
           });
       }, []);
     return(
+        <>
+        <Menu/>
 <div className="content-home"> 
-        <div className="content-img">
-          
-            </div> 
+        <div className="content-img"></div> 
     
            <div className="content-filter">
                 <p className="pagination">16 de 32</p>
                 <div className="content-form">
-                              <p className="orderBy">Filter by: </p>
+                       <p className="orderBy">Filter by: </p>
                 <form action="" className="form-flex">
                     <Select/>
-                    <Select/>
+                    {/* <button className="btn-filter">Order By</button> */}
                     <button className="btn-filter">Clear</button>
                 </form>  
                 </div>   
-
-                <div className="content-arrows">
-                <img src={arrowleft} alt="icon-arrow" className="arrow-sup" />
-                <img src={arrowright} alt="icon-arrow" className="arrow-sup" /> 
-                </div>
-
             </div>
-       
              <Product articles={items}/> 
- 
             <div className="content-inf">
                 <span className="pagination-inf">16 de 32</span>
                 <div className="content-arrows inf-arrow">
@@ -60,6 +53,8 @@ function Home(){
                 </div>
             </div>
         </div>
+        <Footer/>
+        </>
     )
 }
 export default Home; 

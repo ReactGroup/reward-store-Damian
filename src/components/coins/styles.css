@@ -1,0 +1,57 @@
+.content-div{
+    height: 90vh; 
+    max-width: 1200px; 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    }
+
+    .text-coin{
+        max-width: 600px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+.div-coins {
+    max-width: 600px;
+    width: 100%; 
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    margin: 0 auto;
+}
+
+.list-coins{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 350px;
+    width: 80%;
+}
+.list-coins-items{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.list-coins-items:hover{
+    font-size: 23px;
+}
+
+.text{
+padding-top: 1em;
+font-size: 1.3em;
+font-weight: bolder;
+} 
+
+@media (max-width: 746px){
+    .list-coins{
+        flex-direction: column;
+        justify-content: space-evenly;
+         width: 100%;
+    } 
+}

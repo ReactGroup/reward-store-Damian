@@ -1,0 +1,20 @@
+.user{
+    width: 180px;
+    display: flex;
+    align-items: center;
+    margin-top: -4px;
+}
+
+.content-users{
+    margin-bottom: -7px;
+}
+.user > h5{
+    border-top: none; 
+    width: 280px;
+    align-items: center;
+    font-size: 13px;
+}
+
+.coins{
+    margin-top: 3px;
+}

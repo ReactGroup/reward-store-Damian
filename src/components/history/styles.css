@@ -1,0 +1,29 @@
+.content-title{
+    width: 1200px;
+    height: 70px;
+    margin-top: 90px;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.content-move{
+    display: flex;
+    background: #abbaab;  
+    background: -webkit-linear-gradient(to right, #ffffff, #abbaab);  
+    background: linear-gradient(to right, #ffffff, #abbaab); 
+}
+
+ .move-lista{
+    list-style: none;
+    margin-top: 100px;  
+}
+
+ul.move-lista > li{
+   width: 1150px;
+   font-size: 20px;
+   border: 1px solid lightgray;
+   padding: 30px;
+   user-select: none;
+   text-align: center; 
+   margin: 5px auto;
+}
