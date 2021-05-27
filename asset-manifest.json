@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/%7Breward-store-Damian%7D/static/css/main.6b2d445c.chunk.css",
+    "main.js": "/%7Breward-store-Damian%7D/static/js/main.ecfcc37c.chunk.js",
+    "main.js.map": "/%7Breward-store-Damian%7D/static/js/main.ecfcc37c.chunk.js.map",
+    "runtime-main.js": "/%7Breward-store-Damian%7D/static/js/runtime-main.52221bad.js",
+    "runtime-main.js.map": "/%7Breward-store-Damian%7D/static/js/runtime-main.52221bad.js.map",
+    "static/js/2.011d6309.chunk.js": "/%7Breward-store-Damian%7D/static/js/2.011d6309.chunk.js",
+    "static/js/2.011d6309.chunk.js.map": "/%7Breward-store-Damian%7D/static/js/2.011d6309.chunk.js.map",
+    "static/js/3.d05772cf.chunk.js": "/%7Breward-store-Damian%7D/static/js/3.d05772cf.chunk.js",
+    "static/js/3.d05772cf.chunk.js.map": "/%7Breward-store-Damian%7D/static/js/3.d05772cf.chunk.js.map",
+    "index.html": "/%7Breward-store-Damian%7D/index.html",
+    "static/css/main.6b2d445c.chunk.css.map": "/%7Breward-store-Damian%7D/static/css/main.6b2d445c.chunk.css.map",
+    "static/js/2.011d6309.chunk.js.LICENSE.txt": "/%7Breward-store-Damian%7D/static/js/2.011d6309.chunk.js.LICENSE.txt",
+    "static/media/styles.css": "/%7Breward-store-Damian%7D/static/media/shop.cc65119a.png",
+    "static/media/arrowleft.e6eb9be1.svg": "/%7Breward-store-Damian%7D/static/media/arrowleft.e6eb9be1.svg",
+    "static/media/arrowright.3306c112.svg": "/%7Breward-store-Damian%7D/static/media/arrowright.3306c112.svg",
+    "static/media/coin.b8bc711d.svg": "/%7Breward-store-Damian%7D/static/media/coin.b8bc711d.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.52221bad.js",
+    "static/js/2.011d6309.chunk.js",
+    "static/css/main.6b2d445c.chunk.css",
+    "static/js/main.ecfcc37c.chunk.js"
+  ]
+}
