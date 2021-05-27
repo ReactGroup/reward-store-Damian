@@ -1,7 +1,40 @@
 import React, {useState, useEffect} from "react"; 
-import {Link} from "react-router-dom"
+// import {Link} from "react-router-dom"; 
+import Swal from 'sweetalert2';
 import './styles.css'
 function Register(){
+    
+  const registro =() =>{
+    Swal.fire({
+      title: "Desea confirmar el registro",
+     
+      showCancelButton: true,
+      confirmButtonColor: "#3085d6",
+      cancelButtonColor: "#d33",
+      confirmButtonText: "Registro exitoso", 
+      icon: "question",
+     cancelButtonText: "Cancelar",
+     confirmButtonText: "Aceptar"  
+     
+    })
+    .then(() => {
+      if (validateUsername === true && validatePassword === true) {
+         Swal.fire({
+          title: "Registro Exitoso!",
+          icon: "success",
+           confirmButtonText: "Aceptar"   
+        });
+      }
+       else {
+        Swal.fire({
+          title: "Registro Cancelado",
+          icon: "error",
+          confirmButtonText: "Aceptar"
+        });
+      }
+    });
+    }
+
     const [userName, setUserName] = useState("");
     const [validateUsername, setValidateUsername] = useState(true);
     const [userPassword, setUserPassword] = useState("");
@@ -9,6 +42,7 @@ function Register(){
     const [email, setEmail] = useState("");
     const [validateEmail, setValidateEmail] = useState(true); 
     const [boton, habilitarBoton] = useState(true);
+  
 
     const onChangePassword = (e)=>{
     setUserPassword(e.target.value)
@@ -48,11 +82,11 @@ function Register(){
     useEffect(() => {
       if (validateUsername === true && validatePassword === true) {
         habilitarBoton(false);
+       
       } else {
         habilitarBoton(true);
       }
     }, [validateUsername, validatePassword]);
-
 
     return(
         <div className="flex-container-register centered">
@@ -102,13 +136,19 @@ function Register(){
             </span>
           </div>
 
-          <Link className="style"  to="/home">
-              <button disabled={boton} className="btn">
+      
+              <button 
+               disabled={boton} 
+              onClick={registro} className="btn">
             REGISTRARSE
           </button>
-            </Link>  
+           
         </div>
       </div>
+
+      
     )
+
+    
 }
 export default Register; 
