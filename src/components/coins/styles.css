@@ -7,6 +7,7 @@
     margin: 0 auto;
     }
 
+
     .text-coin{
         max-width: 600px;
         width: 100%;
@@ -16,6 +17,11 @@
         flex-direction: column;
         text-align: center;
     }
+    .text{
+        padding-top: 1em;
+        font-size: 1.3em;
+        font-weight: bolder;
+        } 
 
 .div-coins {
     max-width: 600px;
@@ -33,21 +39,21 @@
     height: 350px;
     width: 80%;
 }
-.list-coins-items{
+.input-coins{
+    width: 15px;
+}
+
+label{
+    cursor: pointer;
+}
+
+.item-coins{
     display: flex;
-    width: 100%;
-    justify-content: center;
+    flex-basis: column;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
 }
-.list-coins-items:hover{
-    font-size: 23px;
-}
-
-.text{
-padding-top: 1em;
-font-size: 1.3em;
-font-weight: bolder;
-} 
-
 @media (max-width: 746px){
     .list-coins{
         flex-direction: column;

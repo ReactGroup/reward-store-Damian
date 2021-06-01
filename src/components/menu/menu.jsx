@@ -6,7 +6,9 @@ import Users from '../users/user'
 function Menu(){
     return(
         <header>
-             <img className="logo" src={logo} alt="logo-home" />
+             <Link className="style"  to="/home">
+                <img className="logo" src={logo} alt="logo-home" />
+              </Link>   
              <div class="boton-menu">
           <Users/>
           <input id="desplegar" type="checkbox" class="custom-checkbox" />
@@ -23,7 +25,7 @@ function Menu(){
                 <Link className="style"  to="/home">HOME</Link>   
                 </li> 
                 <li  class="menu-texto style">
-                   <Link className="style"  to="/coins">GET COINS</Link>
+                   <Link className="style"  to="/login">GET COINS</Link>
                 </li>
                 <li  class="menu-texto style">
                    <Link className="style"  to="/history">HISTORY</Link>

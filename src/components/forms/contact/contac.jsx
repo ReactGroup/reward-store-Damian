@@ -3,7 +3,7 @@ import './styles.css';
 import Menu from '../../menu/menu'
 import { faGithubSquare,faLinkedin, faTelegram,  } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {fa,faEnvelope, faMobileAlt} from '@fortawesome/free-solid-svg-icons'
+import {faEnvelope, faMobileAlt} from '@fortawesome/free-solid-svg-icons'
 function Contact(){
     return(
         <>
@@ -12,23 +12,22 @@ function Contact(){
 
           <div className="content-icons" >
             <div style={{fontSize: "1.5em"}}>
-            <a href="https://www.linkedin.com/in/damian-perez-" target="_blank">Linkedin</a>
+            <a href="https://www.linkedin.com/in/damian-perez-">Linkedin</a>
             <FontAwesomeIcon icon={faLinkedin} />
             </div>
             <div className="a" style={{fontSize: "1.5em"}}>
-            <a href="https://github.com/D-Perez85/" target="_blank">Github</a>
+            <a href="https://github.com/D-Perez85/">Github</a>
             <FontAwesomeIcon icon={faGithubSquare} />
             </div>
             <div className="a" style={{fontSize: "1.5em"}}>
-            <a href="https://web.telegram.org/" target="_blank">Telegram</a>
+            <a href="https://web.telegram.org/" >Telegram</a>
             <FontAwesomeIcon icon={faTelegram} />
             </div>  
             <div className="a" style={{fontSize: "1.5em"}}>
-            <a href="" target="_blank">Email</a>
+            <a href="https://www.google.com.ar/">Email</a>
             <FontAwesomeIcon icon={faEnvelope} />
             </div> 
             <div className="a" style={{fontSize: "1.5em"}}>
-            <a href="" target="_blank">Cell-Phone</a>
             <FontAwesomeIcon icon={faMobileAlt} />
             </div>
           </div>

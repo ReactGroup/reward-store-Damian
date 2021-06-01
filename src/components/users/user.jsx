@@ -1,6 +1,15 @@
 import React,{useState,useEffect} from "react"; 
 import './styles.css';
-import coin from '../../icons/coin.svg'
+import coin from '../../icons/coin.svg'; 
+
+
+// const API_URI = process.env.REACT_APP_API_URI;
+// const API_KEY = process.env.REACT_APP_API_KEY;
+// const headers = {
+//   "Content-Type": "application/json",
+//   Authorization: `Bearer ${API_KEY}`
+// }
+//`${API_URI}/user/me`, { headers }
 
   function Users(){
     let [users, setUsers]=useState([]);
@@ -10,7 +19,7 @@ import coin from '../../icons/coin.svg'
       headers: {
           "Content-Type": "application/json",
           "Accept" : "application/json",
-          "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZWRkOWU5OTQ0NGZlNDAwNmRhOTkyNGQiLCJpYXQiOjE1OTE1ODIzNjF9.-f40dyUIGFsBSB_PTeBGdSLI58I21-QBJNi9wkODcKk"
+          "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGIwNTJkZTliNzc4MTAwMjA5YzVhYWMiLCJpYXQiOjE2MjIxNjgyODZ9.Obpv18l_ZSIBKTmtszPDVFqwQssHdlw_zT2VJq7jo-c"
       }
   }); 
       peticion
@@ -18,7 +27,6 @@ import coin from '../../icons/coin.svg'
           return respuesta.json();  
         })
         .then((data) => {
-          console.log(data)
           setUsers(data);
         });
     }, []);

@@ -16,7 +16,7 @@ function LoginCard() {
 
     useEffect(() => {
       if (userName.length !== 0) {
-        setValidateUsername(userName == "username");
+        setValidateUsername(userName === "username");
       }
     }, [userName]);
 
@@ -31,7 +31,7 @@ function LoginCard() {
     }, [userPassword]);
   
     useEffect(() => {
-      if (validateUsername === true && validatePassword === true) {
+      if (!!validateUsername && !!validatePassword) {
         habilitarBoton(false);
       } else {
         habilitarBoton(true);
@@ -74,7 +74,7 @@ function LoginCard() {
               NO olvide incluir el punto dentro de su Password
             </span> */}
           </div>
-          <Link className="style"  to="/home">
+          <Link className="style"  to="/coins">
               <button disabled={boton} className="btn-register">
             LOGIN
           </button>

@@ -1,6 +1,5 @@
 {
-  "homepage" : "http://{D-Perez85}.github.io/{reward-store-Damian}",
-  "name": "store-perez-damian",
+  "homepage" : "http://D-Perez85.github.io/reward-store-damian", 
   "version": "0.1.0",
   "private": true,
   "dependencies": {

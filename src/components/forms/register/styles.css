@@ -8,7 +8,6 @@
 }
 .card-register {
   width: 350px;
- 
   box-shadow: -5px 6px 17px -6px rgba(0, 0, 0, 0.75);
   display: inline-block;
   background-color: #1c1c1c52;
@@ -53,9 +52,9 @@ input {
 .visible {
   opacity: 1;
 }
-.inputError {
-  background-color: #f74545d6;
-  color: white;
+.inputError-register {
+  background-color: #efdb9b;
+  color: black;
 }
 .regla {
   margin-bottom: 10px;
@@ -66,7 +65,7 @@ input {
   font-size: 15px;
 }
 .btn:disabled {
-  background-color: lightgrey;
+  background-color: #1f2b2b;
 }
 .visible {
   opacity: 1;

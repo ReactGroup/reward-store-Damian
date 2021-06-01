@@ -61,25 +61,23 @@ select{
    border: 1px solid black;
    outline: none;
    text-align: center;
+   margin-right: 10px;
 
 }
-.form-flex>select{
+/* .form-flex>select{
     margin-right: 10px;
-}
+} */
 .btn-filter{
-    background-color: grey;
+    background-color: #00c4ff26;
     height: 30px;
-    width: 110px;
+    width: 55px;
     border-radius: 20px;
     border: 1px solid black;
     outline: none;
     text-align: center;
     margin-right: 10px;
 }
-.btn-filter:hover{
-    background-color: aliceblue;
-    font-size: 14px;
-}
+
 .content-arrows{
     width: 130px;
     display: flex;
@@ -112,7 +110,13 @@ select{
 .inf-arrow{
     margin-right: 60px;
 } 
-
+.arrows{
+    border: none;
+    background-color: azure;
+}
+.arrows:hover{
+    background-color: rgb(167, 158, 158)
+}
 /* MEDIA QUERIES PARA 746 PX*/
 
 @media (max-width: 746px){
@@ -133,7 +137,8 @@ select{
     .form-flex{
         margin: 0 auto;
         justify-content: center;
-        width: 240px;
+        /* width: 240px; */
+        margin-right: 0px;
     }
     select{
         display: flex;
@@ -151,8 +156,11 @@ select{
     }
     .btn-filter{
         margin: 10px auto;
-        width: 240px;
+        width: 100px;
         font-size: 17px;
+        justify-content: center;
+    display: flex;
+    align-items: center;
     }
     .line {
         display: none;

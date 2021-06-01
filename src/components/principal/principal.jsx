@@ -11,12 +11,13 @@ function Principal(){
     return(
         <>
     <Switch>
-          <Route exact path="/" component={LoginCard} />
-          <Route exact path="/home" component={Home} />
-          <Route exact path="/coins" component={Coins} />
-          <Route exact path="/history" component={History} />
-          <Route exact path="/register" component={Register} />
-          <Route exact path="/contact" component={Contact} />
+          <Route exact path="/" component={Home} />
+          <Route  path="/home" component={Home} />
+          <Route  path="/login" component={LoginCard} />
+          <Route  path="/coins" component={Coins} />
+          <Route  path="/history" component={History} />
+          <Route  path="/register" component={Register} />
+          <Route  path="/contact" component={Contact} />
           <Route component={NotFound}/>
     </Switch>
         </>

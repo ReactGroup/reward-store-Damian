@@ -11,7 +11,7 @@
   --font-size-3: 18px;
 }
 .contact-content{
-max-width: 1100px;
+max-width: 1200px;
 width: 100%;
 background: #E6DADA;  
 background: -webkit-linear-gradient(to right, #274046, #E6DADA); 
@@ -36,7 +36,7 @@ a{
 }
 .content-icons{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 100%;
 }
 .text-paragraph{
@@ -55,5 +55,9 @@ a{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+  }
+  .text-paragraph{
+    font-size: var(--font-size-1);
+    padding-top: 15px;
   }
 }
