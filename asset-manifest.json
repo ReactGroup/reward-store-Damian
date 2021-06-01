@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/reward-store-damian/static/css/main.4f7adb60.chunk.css",
-    "main.js": "/reward-store-damian/static/js/main.63c6c1e0.chunk.js",
-    "main.js.map": "/reward-store-damian/static/js/main.63c6c1e0.chunk.js.map",
+    "main.js": "/reward-store-damian/static/js/main.7e7bfaa6.chunk.js",
+    "main.js.map": "/reward-store-damian/static/js/main.7e7bfaa6.chunk.js.map",
     "runtime-main.js": "/reward-store-damian/static/js/runtime-main.39c3e292.js",
     "runtime-main.js.map": "/reward-store-damian/static/js/runtime-main.39c3e292.js.map",
     "static/js/2.9a67b635.chunk.js": "/reward-store-damian/static/js/2.9a67b635.chunk.js",
@@ -21,6 +21,6 @@
     "static/js/runtime-main.39c3e292.js",
     "static/js/2.9a67b635.chunk.js",
     "static/css/main.4f7adb60.chunk.css",
-    "static/js/main.63c6c1e0.chunk.js"
+    "static/js/main.7e7bfaa6.chunk.js"
   ]
 }
