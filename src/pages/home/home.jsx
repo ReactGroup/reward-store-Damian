@@ -1,12 +1,12 @@
 import React, {useState,useEffect} from "react"; 
 import './styles.css';
-import Menu from '../menu/menu'
-import Select from '../filters/select/select'; 
-import ButtonLeft from '../filters/button/left';
-import ButtonRight from '../filters/button/right'
-import ButtonReset from '../filters/button/clear'
-import Product from '../products/product'; 
-import Footer from '../footer/footer'; 
+import Menu from '../../components/menu/menu'
+import Select from '../../components/filters/select/select'; 
+import ButtonLeft from '../../components/filters/button/left';
+import ButtonRight from '../../components/filters/button/right'
+import ButtonReset from '../../components/filters/button/clear'
+import Product from '../../components/products/product'; 
+import Footer from '../../components/footer/footer'; 
 //import {usePagination as Pagination} from '../pagination/pagination';
 
 function Home(){
@@ -89,8 +89,8 @@ let [copiaItems, setCopiaItems] = useState([]); //HOOK PARA CONSERVAR ARRAY ORIG
         </>
     )
     
-    function filterArticle(articleSelected){
-            setItems(articleSelected.splice(0,16)); 
+    function filterArticle(selected){
+            setItems(selected.splice(0,16)); 
         }
    
     }

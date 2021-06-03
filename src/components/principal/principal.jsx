@@ -1,12 +1,13 @@
 import React from "react"; 
 import { Route, Switch } from "react-router-dom";
-import Home from '../home/home'; 
+
 import Coins from '../coins/coin'; 
-import NotFound from '../404/notFound'; 
 import LoginCard from '../forms/login/log'; 
-import History from '../history/history'; 
 import Register from '../forms/register/register'; 
-import Contact from '../forms/contact/contac'
+import Home from '../../../src/pages/home/home'; 
+import NotFound from '../../../src/pages/404/notFound'; 
+import History from '../../../src/pages/history/history'; 
+import Contact from '../../../src/pages/contact/contac';
 function Principal(){
     return(
         <>

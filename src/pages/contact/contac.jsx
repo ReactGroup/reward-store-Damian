@@ -1,6 +1,6 @@
 import React from "react"; 
 import './styles.css'; 
-import Menu from '../../menu/menu'
+import Menu from '../../../src/components/menu/menu'
 import { faGithubSquare,faLinkedin, faTelegram,  } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faEnvelope, faMobileAlt} from '@fortawesome/free-solid-svg-icons'

@@ -1,7 +1,7 @@
 import React from "react"; 
 import {Link} from "react-router-dom"
 import './styles.css';
-import logo from '../../images/home.png'
+import logo from '../../assets/images/home.png'
 import Users from '../users/user'
 function Menu(){
     return(

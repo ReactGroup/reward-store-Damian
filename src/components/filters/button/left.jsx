@@ -1,6 +1,6 @@
 import React from "react"; 
 import './styles.css';
-import arrowleft from '../../../icons/arrowleft.svg';
+import arrowleft from '../../../assets/icons/arrowleft.svg';
 function Button(){
     return(
              <button className="arrows">

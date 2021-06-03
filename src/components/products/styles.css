@@ -5,13 +5,18 @@ margin: 0 auto;
 }
 
 .product-card{
-    height: 320px;
+    height: 350px;
     margin-bottom: 2em;
     background-color: #ffffff;
     box-shadow: 0 3px 6px rgba(0,0,0,16);
     border-radius: 15px;
     text-align: center;
     /* font-size: 13px; */
+}
+
+.buy{
+    float: right;
+    margin: 5px;
 }
 
 .product-card-img{

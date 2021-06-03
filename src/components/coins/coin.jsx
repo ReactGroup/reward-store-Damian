@@ -1,41 +1,27 @@
-import React, {useEffect} from "react";
+import React,{useState} from "react";
 import './styles.css'; 
 import Menu from '../menu/menu'
-import coin from '../../icons/coin.svg'
-function Coin(){
-    // useEffect((points) => {
-    //     let peticion = fetch("hhttps://coding-challenge-api.aerolab.co/user/pointss", {amount: points},{
-    //     headers: {
-    //         "Content-Type": "application/json",
-    //         "Accept" : "application/json",
-    //         "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGIwNTJkZTliNzc4MTAwMjA5YzVhYWMiLCJpYXQiOjE2MjIxNjgyODZ9.Obpv18l_ZSIBKTmtszPDVFqwQssHdlw_zT2VJq7jo-c"
-    //     }
-    // }); 
-    //     peticion
-    //       .then((respuesta) => {
-    //         return respuesta.json();
-    //       })
-    //       .then((data) => {
-    //     //    ????????'
-    //       });
-    //   }, []);
+import coin from '../../assets/icons/coin.svg'
 
-  
-     const postUser = async (points) => {
-        try{
-            const response = fetch("hhttps://coding-challenge-api.aerolab.co/user/points", {amount: points},{
-                headers: {
+
+function Coin(){ 
+     let [credits, setCredits]  = useState("")
+     const postUser = async () => {
+       
+            const response = await fetch("https://coding-challenge-api.aerolab.co/user/points",{
+            method: "POST",   
+            headers: {
                          "Content-Type": "application/json",
                          "Accept" : "application/json",
-                         "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGIwNTJkZTliNzc4MTAwMjA5YzVhYWMiLCJpYXQiOjE2MjIxNjgyODZ9.Obpv18l_ZSIBKTmtszPDVFqwQssHdlw_zT2VJq7jo-c"
-                     }
-                 }); 
-        }catch (error){
-            console.error(error)
-        }
+                        //  "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGIwNTJkZTliNzc4MTAwMjA5YzVhYWMiLCJpYXQiOjE2MjIxNjgyODZ9.Obpv18l_ZSIBKTmtszPDVFqwQssHdlw_zT2VJq7jo-c"
+                        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZWRkOWU5OTQ0NGZlNDAwNmRhOTkyNGQiLCJpYXQiOjE1OTE1ODIzNjF9.-f40dyUIGFsBSB_PTeBGdSLI58I21-QBJNi9wkODcKk"          
+                     },
+                     body: JSON.stringify({
+                      "amount": credits
+                     })
+                 })
+                 response.json(); 
       }
-
-    
 
     return(
     <>
@@ -50,36 +36,41 @@ function Coin(){
                 <div className="item-coins">
                     <img src={coin} alt="" className="coins" />
                     <label for="1">1000</label> 
-                    <input type="radio" id="1" className="input-coins" name="credit" value="1000" onClick={handleClick} />
+                    <input type="radio" id="1" className="input-coins" name="credit" value="1000" onChange={handleClick} />
                 </div>
                 <div className="item-coins">
                     <img src={coin} alt="" className="coins" />
                     <label for="2">5000</label>
-                    <input type="radio" id="2" className="input-coins" name="credit" value="5000" onClick={handleClick} />
+                    <input type="radio" id="2" className="input-coins" name="credit" value="5000" onChange={handleClick} />
                 </div>
 
                 <div className="item-coins">
                     <img src={coin} alt="" className="coins" />
                     <label for="3">7500</label>
-                    <input type="radio" id="3" className="input-coins" name="credit" value="7500" onClick={handleClick} />
+                    <input type="radio" id="3" className="input-coins" name="credit" value="7500" onChange={handleClick} />
                 </div>
             </div> 
-            <button>SUBMIT</button>
+            <button onClick={handleSubmit} >SUBMIT</button>
         </div>
     </div>      
     </>  
     )
+
+
     function handleClick(e){
         if (e.target.value === "1000"){
-            postUser(1000); 
-            console.log("click en 1") 
+            setCredits(1000); 
         }else if(e.target.value === "5000") {
-            postUser(5000); 
-            console.log("click en 2")
+            setCredits(5000); 
         }else if(e.target.value === "7500") {
-            postUser(7500); 
-            console.log("click en 3")
+            setCredits(7500); 
         }
+    }
+
+    function handleSubmit(credits){
+        postUser(credits) 
+        alert("Exito al comprar"); 
+        window.location.reload(); 
     }
 }
 export default Coin; 
