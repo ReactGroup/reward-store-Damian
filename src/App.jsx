@@ -1,9 +1,15 @@
-import React from "react"; 
-import Principal from './components/principal/principal'
+import React from "react";
+import Principal from "./components/principal/principal";
+import { ProductContextProvider } from "./context/productContext";
+import {UserContextProvider} from "./context/userContex"
 function App() {
   return (
     <div className="App">
-      <Principal/>
+    <UserContextProvider>
+    <ProductContextProvider>  
+         <Principal />
+    </ProductContextProvider>
+    </UserContextProvider>
     </div>
   );
 }
