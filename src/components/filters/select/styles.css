@@ -1,4 +1,30 @@
-select{
-    background-color: #00c4ff26;
-    width: 150px;
+select {
+  background-color: #00c4ff26;
+  width: 150px;
+  padding: 2px;
+  height: 30px;
+  border-radius: 20px;
+  border: 1px solid black;
+  outline: none;
+  text-align: center;
+  margin-right: 10px;
+}
+
+.input-filter {
+  display: none;
+}
+
+
+label:hover{
+  font-weight: bolder;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  text-align: center;
+  text-decoration: underline;
+ 
+}
+
+label:active{
+text-decoration:wavy;
 }

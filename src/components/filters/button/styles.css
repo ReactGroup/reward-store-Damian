@@ -1,21 +1,28 @@
-.btn-order{
-    background-color: #00c4ff26;
-    height: 30px;
-    width: 55px;
-    border-radius: 20px;
-    border: 1px solid black;
-    outline: none;
-    text-align: center;
-    margin-right: 10px;
+.btn-order {
+  background-color: #00c4ff26;
+  height: 30px;
+  width: 55px;
+  border-radius: 20px;
+  border: 1px solid black;
+  outline: none;
+  text-align: center;
+  margin-right: 10px;
+}
+.arrows {
+  border: none;
+  background-color: azure;
+}
+.arrows:hover {
+  background-color: rgb(167, 158, 158);
 }
 
-@media (max-width: 746px){
-  .btn-order{
+@media (max-width: 746px) {
+  .btn-order {
     margin: 10px auto;
     width: 100px;
     font-size: 17px;
     justify-content: center;
-display: flex;
-align-items: center;
-}  
+    display: flex;
+    align-items: center;
+  }
 }

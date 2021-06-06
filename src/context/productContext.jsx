@@ -3,19 +3,17 @@ import { createContext, useState, useEffect } from "react";
 export const ProductContext = createContext();
 
 export const ProductContextProvider = (props) => {
+  let [items, setItems] = useState([]); //HOOK DE PRODUCTOS SELECCIONADOS
+  let [copiaItems, setCopiaItems] = useState([]); //HOOK PARA CONSERVAR ARRAY ORIGINAL
 
-let [items, setItems] = useState([]); //HOOK DE PRODUCTOS SELECCIONADOS
-let [copiaItems, setCopiaItems] = useState([]); //HOOK PARA CONSERVAR ARRAY ORIGINAL
-
-
-useEffect(() => {
+  useEffect(() => {
     let peticion = fetch("https://coding-challenge-api.aerolab.co/products", {
       headers: {
         "Content-Type": "application/json",
         Accept: "application/json",
         Authorization:
-          //"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGIwNTJkZTliNzc4MTAwMjA5YzVhYWMiLCJpYXQiOjE2MjIxNjgyODZ9.Obpv18l_ZSIBKTmtszPDVFqwQssHdlw_zT2VJq7jo-c",
           "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGJiOTUwNDliNzc4MTAwMjA5YzVhYmUiLCJpYXQiOjE2MjI5MDYxMTZ9.IU39X-f0cIEBL4DMpxdG5qBharIwcHRxg6voJfFRe2Y",
+        //  "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZWRkOWU5OTQ0NGZlNDAwNmRhOTkyNGQiLCJpYXQiOjE1OTE1ODIzNjF9.-f40dyUIGFsBSB_PTeBGdSLI58I21-QBJNi9wkODcKk",
       },
     });
     peticion
@@ -29,7 +27,9 @@ useEffect(() => {
   }, []);
 
   return (
-    <ProductContext.Provider value={{items,copiaItems,setCopiaItems }}>
+    <ProductContext.Provider
+      value={{ items, copiaItems, setCopiaItems, setItems }}
+    >
       {props.children}
     </ProductContext.Provider>
   );

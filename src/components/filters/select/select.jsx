@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useState, useContext } from "react";
+import { ProductContext } from "../../../context/productContext";
 import "./styles.css";
 
-function Select({ setCopiaItems,items}) {
+function Select({ filter }) {
+  const { items, copiaItems } = useContext(ProductContext);
+  const [resultPrice, setResultPrice] = useState(copiaItems);
   let repeat = {};
   let result = items.filter(function (value) {
     let exists = !repeat[value.category];
@@ -15,15 +18,50 @@ function Select({ setCopiaItems,items}) {
         ? value
         : value.category === e.target.value;
     });
-    setCopiaItems(filterUpdate)
+    filter(filterUpdate);
+    setResultPrice(filterUpdate);
   }
+  function filterHigher(e) {
+    let array = [...copiaItems];
+    let order = array.sort((a, b) => b.cost - a.cost);
+    filter(order);
+  }
+
+  function filterLower(e) {
+    let array = [...copiaItems];
+    let order = array.sort((a, b) => a.cost - b.cost);
+    filter(order);
+  }
+
   return (
-    <select onChange={filterByArticle} name="categories" id="">
-      <option value="All Categories">All Categories</option>
-      {result.map((value, index) => {
-        return <option key={index}>{value.category}</option>;
-      })}
-    </select>
+    <>
+      <select onChange={filterByArticle} name="categories" id="">
+        <option value="All Categories">All Categories</option>
+        {result.map((value, index) => {
+          return <option key={index}>{value.category}</option>;
+        })}
+      </select>
+
+      <input
+        className="input-filter"
+        type="radio"
+        id="lowest"
+        name="filter"
+        value="lowest"
+        onClick={filterLower}
+      />
+      <label for="lowest">Precio más bajo</label>
+
+      <input
+        className="input-filter"
+        type="radio"
+        id="highest"
+        name="filter"
+        value="highest"
+        onClick={filterHigher}
+      />
+      <label for="highest">Precio más alto</label>
+    </>
   );
 }
 export default Select;
