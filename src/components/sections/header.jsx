@@ -1,12 +1,13 @@
 import React, { useContext } from "react";
 import { ProductContext } from "../../context/productContext";
 import "./styles.css";
-import Select from "../../components/filters/select/select";
+import Select from "../filters/select/select";
 
-function Higher({ page }) {
-  const {items, setCopiaItems } = useContext(ProductContext);
+function Header({ page, setPage }) {
+  const { items, setCopiaItems } = useContext(ProductContext);
 
   function filter(selected) {
+    setPage(false);
     setCopiaItems(selected);
   }
   function btnReset() {
@@ -20,11 +21,9 @@ function Higher({ page }) {
         <div className="content-form">
           <p className="orderBy">Filter by: </p>
           <form action="" className="form-flex">
-            <Select
-              filter={filter}
-            />
+            <Select filter={filter} />
 
-            <button type="reset" onClick={btnReset}>
+            <button className="reset-filter" type="reset" onClick={btnReset}>
               Reset Filter
             </button>
           </form>
@@ -33,4 +32,4 @@ function Higher({ page }) {
     </>
   );
 }
-export default Higher;
+export default Header;

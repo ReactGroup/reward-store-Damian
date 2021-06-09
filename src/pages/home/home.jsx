@@ -2,9 +2,9 @@ import React, { useContext, useState } from "react";
 import { ProductContext } from "../../context/productContext";
 import "./styles.css";
 import Menu from "../../components/menu/menu";
-import SectionHigh from "../../components/sections/higher";
+import SectionHeader from "../../components/sections/header";
 import Product from "../../components/productList/product";
-import SectionLow from "../../components/sections/lower";
+import SectionFooter from "../../components/sections/footer";
 import Footer from "../../components/footer/footer";
 
 function Home() {
@@ -16,9 +16,9 @@ function Home() {
     <>
       <Menu />
       <div className="content-home">
-        <SectionHigh page={page} />
-        <Product articles={itemSlice} />
-        <SectionLow page={page} setPage={setPage} itemSlice={itemSlice} />
+        <SectionHeader page={page} setPage={setPage} />
+        <Product itemSlice={itemSlice} />
+        <SectionFooter page={page} setPage={setPage} itemSlice={itemSlice} />
       </div>
       <Footer />
     </>

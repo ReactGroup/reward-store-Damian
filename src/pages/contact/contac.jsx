@@ -7,7 +7,7 @@ import {
   faTelegram,
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope, faMobileAlt } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 function Contact() {
   return (
     <>
@@ -23,15 +23,12 @@ function Contact() {
             <FontAwesomeIcon icon={faGithubSquare} />
           </div>
           <div className="a" style={{ fontSize: "1.5em" }}>
-            <a href="https://web.telegram.org/">Telegram</a>
+            <a href="https://t.me/DPerez85">Telegram</a>
             <FontAwesomeIcon icon={faTelegram} />
           </div>
           <div className="a" style={{ fontSize: "1.5em" }}>
-            <a href="https://www.google.com.ar/">Email</a>
+            <a href="mailto:damianperez22@hotmail.com">Email</a>
             <FontAwesomeIcon icon={faEnvelope} />
-          </div>
-          <div className="a" style={{ fontSize: "1.5em" }}>
-            <FontAwesomeIcon icon={faMobileAlt} />
           </div>
         </div>
 

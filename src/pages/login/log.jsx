@@ -67,15 +67,14 @@ function LoginCard() {
             name="password"
             type="password"
           />
-          {/* <span id="comment-login" className={validatePassword ? " error" : "visible  error"}>
-              NO olvide incluir el punto dentro de su Password
-            </span> */}
         </div>
+
         <Link className="style" to="/coins">
           <button disabled={boton} className="btn-register">
             LOGIN
           </button>
         </Link>
+      
 
         <p className="register-link">
           Don´t have an account?

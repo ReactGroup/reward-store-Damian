@@ -20,7 +20,7 @@
 }
 .notBuy {
   margin: 1em auto 0px;
-  background-color: #38e41961;
+  background-color: #38e41924;
   border-radius: 100px;
   height: 40px;
   width: 270px;
@@ -52,7 +52,8 @@
   align-items: center;
   padding-top: 0.7em;
 }
-.buy-hover, .not-buy-hover{
+.buy-hover,
+.not-buy-hover {
   width: 100px;
   height: 1.5em;
   margin: 0 auto;
@@ -63,17 +64,10 @@
   justify-content: center;
   color: white;
 }
-.buy-hover{
+.buy-hover {
   background-color: rgb(94, 108, 211);
 }
-.buy-hover:hover{
-  background-color: rgb(182, 220, 14);
-  color: black;
-}
-.not-buy-hover{
-  background-color: rgb(71, 82, 42);
-}
-.redeem{
+.redeem {
   width: 100%;
   height: 380px;
   background-color: #b9b9d4c9;
@@ -84,10 +78,9 @@
   text-align: center;
   align-items: center;
   border-radius: 15px;
-
 }
 
-.not-redeem{
+.not-redeem {
   width: 100%;
   height: 380px;
   background-color: #b9b9d4d9;

@@ -1,29 +1,22 @@
 import React, { useState, useContext } from "react";
+import { headers, API_URL_POINTS } from "../../header";
 import "./styles.css";
 import Menu from "../../components/menu/menu";
 import coin from "../../assets/icons/coin.svg";
 import { UserContext } from "../../../src/context/userContex";
-
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 function Coin() {
   let [credits, setCredits] = useState("");
   const { user, setUser } = useContext(UserContext);
   const postUser = async () => {
-    const response = await fetch(
-      "https://coding-challenge-api.aerolab.co/user/points",
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
-          Authorization:
-          "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGJiOTUwNDliNzc4MTAwMjA5YzVhYmUiLCJpYXQiOjE2MjI5MDYxMTZ9.IU39X-f0cIEBL4DMpxdG5qBharIwcHRxg6voJfFRe2Y",
-          //  "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZWRkOWU5OTQ0NGZlNDAwNmRhOTkyNGQiLCJpYXQiOjE1OTE1ODIzNjF9.-f40dyUIGFsBSB_PTeBGdSLI58I21-QBJNi9wkODcKk", (ACAMICA)
-        },
-        body: JSON.stringify({
-          amount: credits,
-        }),
-      }
-    );
+    const response = await fetch(`${API_URL_POINTS}`, {
+      method: "POST",
+      headers,
+      body: JSON.stringify({
+        amount: credits,
+      }),
+    });
     response.json();
     setUser(!user);
   };
@@ -40,7 +33,15 @@ function Coin() {
 
   function handleSubmit(credits) {
     postUser(credits);
-    //alert("Exito al comprar");
+    toast.success("You buy new Coins!", {
+      position: "top-right",
+      autoClose: 2300,
+      hideProgressBar: true,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+    });
   }
 
   return (
@@ -91,7 +92,8 @@ function Coin() {
               />
             </div>
           </div>
-          <button onClick={handleSubmit}>SUBMIT</button>
+          <button className="submit-coin" onClick={handleSubmit}>SUBMIT</button>
+          <ToastContainer />
         </div>
       </div>
     </>

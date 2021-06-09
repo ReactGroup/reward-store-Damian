@@ -3,60 +3,62 @@
   margin: 0;
   padding: 0;
 }
+i
 :root {
-  --font-family-1: 'IBM Plex Sans', sans-serif;
-  --font-family-2: 'IBM Plex Mono', monospace;
+  --font-family-1: "IBM Plex Sans", sans-serif;
+  --font-family-2: "IBM Plex Mono", monospace;
   --font-size-1: 15px;
   --font-size-2: 16px;
   --font-size-3: 18px;
 }
-.contact-content{
-max-width: 1200px;
-width: 100%;
-background: #E6DADA;  
-background: -webkit-linear-gradient(to right, #274046, #E6DADA); 
-background: linear-gradient(to right, #274046, #E6DADA);
-margin: 0 auto;
-display: flex;
-flex-direction: column-reverse;
-align-items: center;
-justify-content: space-around;
-height: 100vh;
+.contact-content {
+  max-width: 1200px;
+  width: 100%;
+  background: #70e1f5;
+  background: -webkit-linear-gradient(to right, #70e1f5, #ffd194);
+  background: linear-gradient(to right, #70e1f5, #ffd194);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: space-around;
+  height: 100vh;
+ 
 }
-.contact-right{
+.contact-right {
   text-align: center;
   width: 100%;
 }
-a{
+a {
   font-size: 20px;
   color: black;
   text-decoration: none;
   margin-right: 5px;
   cursor: pointer;
 }
-.content-icons{
+.content-icons {
   display: flex;
   justify-content: space-around;
   width: 100%;
 }
-.text-paragraph{
+.text-paragraph {
   font-family: var(--font-family-2);
   font-size: var(--font-size-3);
   letter-spacing: 0.3px;
-  margin: 0px 10px 13px; 
+  margin: 0px 10px 13px;
 }
-/* MEDIA QUERIES PARA 746 PX*/
-@media (max-width: 746px){
 
-  .contact-right{
-   margin: 0 auto;
+/* MEDIA QUERIES PARA 746 PX*/
+@media (max-width: 746px) {
+  .contact-right {
+    margin: 0 auto;
   }
-  .content-icons{
+  .content-icons {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
   }
-  .text-paragraph{
+  .text-paragraph {
     font-size: var(--font-size-1);
     padding-top: 15px;
   }

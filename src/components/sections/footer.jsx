@@ -2,7 +2,7 @@ import React from "react";
 import ButtonLeft from "../filters/button/left";
 import ButtonRight from "../filters/button/right";
 import "./styles.css";
-function Lower({ itemSlice, page, setPage }) {
+function SectionFooter({ itemSlice, page, setPage }) {
   return (
     <>
       <div className="content-inf">
@@ -25,4 +25,4 @@ function Lower({ itemSlice, page, setPage }) {
     </>
   );
 }
-export default Lower;
+export default SectionFooter;

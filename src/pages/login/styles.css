@@ -18,16 +18,16 @@
 .flex-container {
   display: flex;
   height: 90vh;
-  background: -webkit-linear-gradient(to right, #274046, #E6DADA); 
-  background: linear-gradient(to right, #274046, #E6DADA);
-  background-image: url('../../assets/images/access.jpg');
+  background: -webkit-linear-gradient(to right, #274046, #e6dada);
+  background: linear-gradient(to right, #274046, #e6dada);
+  background-image: url("../../assets/images/access.jpg");
 }
 
 .centered {
   justify-content: center;
   align-items: center;
 }
-.title-form{
+.title-form {
   font-weight: bold;
   letter-spacing: 3px;
   font-size: 24px;
@@ -52,7 +52,7 @@ input {
 }
 .error {
   font-size: 11px;
- color: rgba(0, 0, 0);
+  color: rgba(0, 0, 0);
   opacity: 0;
 }
 .visible {
@@ -60,17 +60,19 @@ input {
 }
 .inputError-login {
   background-color: #ffe2a8;
-  color: #000000 ;
+  color: #000000;
 }
 .regla {
   margin-bottom: 15px;
   font-size: 13px;
 }
-.title{
+.title {
   text-align: center;
   font-size: 15px;
 }
-.regla, .title, #comment-login{
+.regla,
+.title,
+#comment-login {
   color: white;
 }
 .btn-register:disabled {
@@ -79,14 +81,13 @@ input {
 .visible {
   opacity: 1;
 }
-.register-link{
+.register-link {
   font-size: 15px;
   color: white;
   padding-top: 10px;
 }
-.style-em{
+.style-em {
   color: #89f745;
   text-decoration: none;
   font-size: 15px;
 }
-

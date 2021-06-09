@@ -10,11 +10,9 @@
 }
 .arrows {
   border: none;
-  background-color: azure;
+  border-radius: 25px;
 }
-.arrows:hover {
-  background-color: rgb(167, 158, 158);
-}
+
 
 @media (max-width: 746px) {
   .btn-order {

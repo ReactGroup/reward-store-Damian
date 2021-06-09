@@ -1,15 +1,21 @@
 select {
-  background-color: #00c4ff26;
+  background-color: #5183d09c;
   width: 150px;
   padding: 2px;
   height: 30px;
+  font-size: 14px;
   border-radius: 20px;
   border: 1px solid black;
   outline: none;
   text-align: center;
+  text-align-last: center;
   margin-right: 10px;
+  color: white;
 }
 
+select .option{
+  text-align: center;
+}
 .input-filter {
   display: none;
 }
@@ -27,4 +33,14 @@ label:hover{
 
 label:active{
 text-decoration:wavy;
+}
+
+@media (max-width: 746px){
+  select{
+    margin: 0 auto;
+  }
+
+label{
+    display: none;
+  }
 }

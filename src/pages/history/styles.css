@@ -1,10 +1,32 @@
-.content-history{
-    max-width: 1200px;
-    height: 130px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-background-color: #c9d7d8;
+.content-history {
+  max-width: 1200px;
+  height: 110px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #c9d7d8;
+}
 
+.content-history>h3{
+  transform: translate(0,25px);
+}
+
+.history-list{
+  max-width: 1200px;
+  height: 130px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.img-history{
+  height: 55px;
+}
+
+.content-price{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 

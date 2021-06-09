@@ -4,7 +4,7 @@ import "./styles.css";
 
 function Select({ filter }) {
   const { items, copiaItems } = useContext(ProductContext);
-  const [resultPrice, setResultPrice] = useState(copiaItems);
+  const [setResultPrice] = useState(copiaItems);
   let repeat = {};
   let result = items.filter(function (value) {
     let exists = !repeat[value.category];
@@ -36,7 +36,9 @@ function Select({ filter }) {
   return (
     <>
       <select onChange={filterByArticle} name="categories" id="">
-        <option value="All Categories">All Categories</option>
+        <option className="option" value="All Categories">
+          All Categories
+        </option>
         {result.map((value, index) => {
           return <option key={index}>{value.category}</option>;
         })}
@@ -50,7 +52,7 @@ function Select({ filter }) {
         value="lowest"
         onClick={filterLower}
       />
-      <label for="lowest">Precio más bajo</label>
+      <label for="lowest">Lower Price</label>
 
       <input
         className="input-filter"
@@ -60,7 +62,7 @@ function Select({ filter }) {
         value="highest"
         onClick={filterHigher}
       />
-      <label for="highest">Precio más alto</label>
+      <label for="highest">Higher Price</label>
     </>
   );
 }

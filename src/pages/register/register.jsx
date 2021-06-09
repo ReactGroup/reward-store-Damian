@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import "./styles.css";
 function Register() {
   const [userName, setUserName] = useState("");
@@ -10,7 +11,16 @@ function Register() {
   const [email, setEmail] = useState("");
   const [validateEmail, setValidateEmail] = useState(false);
   const [boton, habilitarBoton] = useState(false);
-
+  const notify = () =>
+    toast.success("Succesful Register!!!", {
+      position: "top-center",
+      autoClose: 3000,
+      hideProgressBar: true,
+      closeOnClick: false,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+    });
   const onChangePassword = (e) => {
     setUserPassword(e.target.value);
   };
@@ -46,6 +56,7 @@ function Register() {
   useEffect(() => {
     if (!!validatePassword && !!validateUsername && !!validateEmail) {
       habilitarBoton(false);
+      notify();
     } else {
       habilitarBoton(true);
     }
@@ -55,7 +66,7 @@ function Register() {
     <div className="flex-container-register centered">
       <div className="card-register ">
         <div className="regla title-register">
-          <strong>REGISTRO</strong>
+          <strong>REGISTER FORM</strong>
         </div>
         <div className="inputContainer">
           <input
@@ -111,9 +122,10 @@ function Register() {
         </div>
 
         <Link className="style" to="/coins">
-          <button disabled={boton} className="btn">
-            REGISTRARSE
+          <button disabled={boton} onClick={notify} className="btn">
+            GO TO MARKET COINS
           </button>
+          <ToastContainer />
         </Link>
       </div>
     </div>
