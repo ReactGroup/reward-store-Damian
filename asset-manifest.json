@@ -1,17 +1,19 @@
 {
   "files": {
-    "main.css": "/reward-store-Damian/static/css/main.aa3bb17f.chunk.css",
-    "main.js": "/reward-store-Damian/static/js/main.2a30bb61.chunk.js",
-    "main.js.map": "/reward-store-Damian/static/js/main.2a30bb61.chunk.js.map",
-    "runtime-main.js": "/reward-store-Damian/static/js/runtime-main.78cb50f5.js",
-    "runtime-main.js.map": "/reward-store-Damian/static/js/runtime-main.78cb50f5.js.map",
-    "static/js/2.0c1b8b47.chunk.js": "/reward-store-Damian/static/js/2.0c1b8b47.chunk.js",
-    "static/js/2.0c1b8b47.chunk.js.map": "/reward-store-Damian/static/js/2.0c1b8b47.chunk.js.map",
-    "static/js/3.b46826f6.chunk.js": "/reward-store-Damian/static/js/3.b46826f6.chunk.js",
-    "static/js/3.b46826f6.chunk.js.map": "/reward-store-Damian/static/js/3.b46826f6.chunk.js.map",
+    "main.css": "/reward-store-Damian/static/css/main.27791cdb.chunk.css",
+    "main.js": "/reward-store-Damian/static/js/main.219af9df.chunk.js",
+    "main.js.map": "/reward-store-Damian/static/js/main.219af9df.chunk.js.map",
+    "runtime-main.js": "/reward-store-Damian/static/js/runtime-main.924f364a.js",
+    "runtime-main.js.map": "/reward-store-Damian/static/js/runtime-main.924f364a.js.map",
+    "static/css/2.97503911.chunk.css": "/reward-store-Damian/static/css/2.97503911.chunk.css",
+    "static/js/2.218aa855.chunk.js": "/reward-store-Damian/static/js/2.218aa855.chunk.js",
+    "static/js/2.218aa855.chunk.js.map": "/reward-store-Damian/static/js/2.218aa855.chunk.js.map",
+    "static/js/3.0f21707b.chunk.js": "/reward-store-Damian/static/js/3.0f21707b.chunk.js",
+    "static/js/3.0f21707b.chunk.js.map": "/reward-store-Damian/static/js/3.0f21707b.chunk.js.map",
     "index.html": "/reward-store-Damian/index.html",
-    "static/css/main.aa3bb17f.chunk.css.map": "/reward-store-Damian/static/css/main.aa3bb17f.chunk.css.map",
-    "static/js/2.0c1b8b47.chunk.js.LICENSE.txt": "/reward-store-Damian/static/js/2.0c1b8b47.chunk.js.LICENSE.txt",
+    "static/css/2.97503911.chunk.css.map": "/reward-store-Damian/static/css/2.97503911.chunk.css.map",
+    "static/css/main.27791cdb.chunk.css.map": "/reward-store-Damian/static/css/main.27791cdb.chunk.css.map",
+    "static/js/2.218aa855.chunk.js.LICENSE.txt": "/reward-store-Damian/static/js/2.218aa855.chunk.js.LICENSE.txt",
     "static/media/styles.css": "/reward-store-Damian/static/media/shop.cc65119a.png",
     "static/media/arrowleft.e6eb9be1.svg": "/reward-store-Damian/static/media/arrowleft.e6eb9be1.svg",
     "static/media/arrowright.3306c112.svg": "/reward-store-Damian/static/media/arrowright.3306c112.svg",
@@ -19,9 +21,10 @@
     "static/media/coin.b8bc711d.svg": "/reward-store-Damian/static/media/coin.b8bc711d.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.78cb50f5.js",
-    "static/js/2.0c1b8b47.chunk.js",
-    "static/css/main.aa3bb17f.chunk.css",
-    "static/js/main.2a30bb61.chunk.js"
+    "static/js/runtime-main.924f364a.js",
+    "static/css/2.97503911.chunk.css",
+    "static/js/2.218aa855.chunk.js",
+    "static/css/main.27791cdb.chunk.css",
+    "static/js/main.219af9df.chunk.js"
   ]
 }
