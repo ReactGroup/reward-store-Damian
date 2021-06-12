@@ -19,10 +19,9 @@ function Header({ page, setPage }) {
       <div className="content-filter">
         <p className="pagination">{page ? "17 a 32" : "01 a 16"}</p>
         <div className="content-form">
-          <p className="orderBy">Filter by: </p>
           <form action="" className="form-flex">
+            <p className="orderBy">Filter by: </p>
             <Select filter={filter} />
-
             <button className="reset-filter" type="reset" onClick={btnReset}>
               Reset Filter
             </button>

@@ -12,8 +12,8 @@ function Users() {
     <div className="content-users">
       <div className="user">
         <h5>{users.name}</h5>
-          {users.points}
         <img src={coin} alt="user-coins" className="coins" />
+          {users.points}
       </div>
     </div>
   );

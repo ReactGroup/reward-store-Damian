@@ -1,10 +1,11 @@
-import React, { useState, useContext } from "react";
+import React, {  useContext } from "react";
 import { ProductContext } from "../../../context/productContext";
 import "./styles.css";
 
 function Select({ filter }) {
   const { items, copiaItems } = useContext(ProductContext);
-  const [setResultPrice] = useState(copiaItems);
+  //const [resultPrice, setResultPrice] = useState(copiaItems);
+  //console.log(resultPrice)
   let repeat = {};
   let result = items.filter(function (value) {
     let exists = !repeat[value.category];
@@ -19,11 +20,12 @@ function Select({ filter }) {
         : value.category === e.target.value;
     });
     filter(filterUpdate);
-    setResultPrice(filterUpdate);
+    //setResultPrice(filterUpdate);
   }
   function filterHigher(e) {
     let array = [...copiaItems];
     let order = array.sort((a, b) => b.cost - a.cost);
+    //filter(resultPrice)
     filter(order);
   }
 

@@ -8,12 +8,12 @@ function History() {
   const { history } = useContext(HistoryContext);
   return (
     <>
-      <div></div>
+      {/* <div></div> */}
       <Menu />
       <div className="content-history">
         <h3>Image</h3>
         <h3>Product Name</h3>
-        <h3>Category</h3>
+        {/* <h3 className="category">Category</h3> */}
         <h3>Cost</h3>
       </div>
 
@@ -24,7 +24,7 @@ function History() {
               <div className="history-list">
                 <img className="img-history" src={item.img.url} alt="" />
                 <h4>{item.name}</h4>
-                <h4>{item.category}</h4>
+                {/* <h4 className="category">{item.category}</h4> */}
                 <div className="content-price">
                   <img src={coin} alt="" />
                   <h4>{item.cost}</h4>

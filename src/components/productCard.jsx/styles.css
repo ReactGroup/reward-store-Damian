@@ -29,7 +29,11 @@
   padding: 2em;
 }
 .item {
-  padding-top: 13px;
+  padding-bottom: 10px;
+}
+
+.category{
+  color: gray;
 }
 
 .item-price {

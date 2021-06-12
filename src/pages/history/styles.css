@@ -13,11 +13,13 @@
 
 .history-list{
   max-width: 1200px;
-  height: 130px;
+  height: 90px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  background-color: #e9f7f5;
+  margin: 15px;
 }
 
 .img-history{
@@ -30,3 +32,8 @@
   justify-content: space-evenly;
 }
 
+@media (max-width: 746px) {
+  .category {
+    display: none;
+  }
+}

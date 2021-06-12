@@ -9,7 +9,7 @@ function Menu() {
       <Link className="style" to="/home">
         <img className="logo" src={logo} alt="logo-home" />
       </Link>
-      
+
       <div class="boton-menu">
         <Users />
         <input id="desplegar" type="checkbox" class="custom-checkbox" />

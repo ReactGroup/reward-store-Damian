@@ -2,12 +2,12 @@
     width: 180px;
     display: flex;
     align-items: center;
-    margin-top: -4px;
+    /* margin-top: -4px; */
 }
 
-.content-users{
-    margin-bottom: -7px;
-}
+/* .content-users{
+    padding-top: 2px;
+} */
 .user > h5{
     border-top: none; 
     width: 280px;
@@ -15,6 +15,6 @@
     font-size: 13px;
 }
 
-.coins{
+/* .coins{
     margin-top: 3px;
-}
+} */

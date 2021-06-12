@@ -11,12 +11,12 @@ function SectionFooter({ itemSlice, page, setPage }) {
           {itemSlice.length > 15 &&
             (page ? (
               <>
-                <p>Prev</p>
                 <ButtonLeft page={page} setPage={setPage} />
+                <p className="button-footer">Prev</p>
               </>
             ) : (
               <>
-                <p>Next</p>
+                <p className="button-footer">Next</p>
                 <ButtonRight page={page} setPage={setPage} />
               </>
             ))}

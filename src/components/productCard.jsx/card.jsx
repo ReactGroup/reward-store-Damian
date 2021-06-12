@@ -91,9 +91,8 @@ function Card({ product }) {
           <ToastContainer />
         </div>
       )}
-      <h3 className="category">{product.category}</h3>
-      <h4 className="item">{product.name}</h4>
-
+      <h3 className="item">{product.name}</h3>
+      <h4 className="category">{product.category}</h4>
       <div className="item-price"></div>
     </div>
   );
