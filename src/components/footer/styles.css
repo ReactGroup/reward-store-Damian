@@ -14,7 +14,7 @@
     font-weight: bold;
 }
 .footer-paragraph:hover{
-   color: #bd3d15;
+   font-size: 18px;
    text-decoration: underline;
 }
 .text-footer{

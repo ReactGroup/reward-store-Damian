@@ -37,10 +37,9 @@ function Menu() {
                 HISTORY
               </Link>
             </li>
-            <li class="menu-texto style">
-              <Link className="style" to="/">
-                EXIT
-              </Link>
+            <li class="menu-texto">
+                <a class="style" href="https://www.google.com.ar/">
+                EXIT</a>
             </li>
           </ul>
         </div>

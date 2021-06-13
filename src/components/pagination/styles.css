@@ -1,0 +1,15 @@
+.paginator {
+  display: flex;
+}
+.paginator button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  margin: 15px;
+}
+.text-pages{
+  font-size: 1.2em;
+  font-weight: bolder;
+}

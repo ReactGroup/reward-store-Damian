@@ -5,22 +5,19 @@ select {
   height: 30px;
   font-size: 14px;
   border-radius: 20px;
-  border: 1px solid black;
+  border:none;
   outline: none;
   text-align: center;
   text-align-last: center;
   margin-right: 10px;
   color: white;
 }
-
 select .option{
   text-align: center;
 }
 .input-filter {
   display: none;
 }
-
-
 label:hover{
   font-weight: bolder;
   border-radius: 20px;
@@ -28,9 +25,7 @@ label:hover{
   outline: none;
   text-align: center;
   text-decoration: underline;
- 
 }
-
 label:active{
 text-decoration:wavy;
 }
@@ -39,8 +34,7 @@ text-decoration:wavy;
   select{
     margin: 0 auto;
   }
-
-label{
+#order-label {
     display: none;
   }
 }

@@ -12,7 +12,7 @@ function Card({ product }) {
   const notify = () =>
     toast.dark("Succesful Buy!!!", {
       position: "top-right",
-      autoClose: 2200,
+      autoClose: 2800,
       hideProgressBar: true,
       closeOnClick: true,
       pauseOnHover: false,

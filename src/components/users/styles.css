@@ -1,20 +1,10 @@
-.user{
-    width: 180px;
-    display: flex;
-    align-items: center;
-    /* margin-top: -4px; */
+.user {
+  display: flex;
+  align-items: center;
 }
-
-/* .content-users{
-    padding-top: 2px;
-} */
-.user > h5{
-    border-top: none; 
-    width: 280px;
-    align-items: center;
-    font-size: 13px;
+.user > h5 {
+  border-top: none;
+  width: 65px;
+  align-items: center;
+  font-size: 13px;
 }
-
-/* .coins{
-    margin-top: 3px;
-} */

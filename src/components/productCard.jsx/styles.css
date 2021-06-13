@@ -2,7 +2,6 @@
   max-width: 1200px;
   margin: 0 auto;
 }
-
 .product-card {
   height: 380px;
   margin-bottom: 2em;
@@ -11,16 +10,13 @@
   border-radius: 15px;
   text-align: center;
 }
-
 .buy {
   float: right;
   margin: 5px;
 }
-
 .product-card-img {
   width: 100%;
 }
-
 .product-list {
   display: flex;
   flex-wrap: wrap;
@@ -31,11 +27,9 @@
 .item {
   padding-bottom: 10px;
 }
-
 .category{
   color: gray;
 }
-
 .item-price {
   display: flex;
   justify-content: center;

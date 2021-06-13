@@ -6,7 +6,6 @@
   margin: 0;
   padding: 0;
 }
-
 .card {
   width: 350px;
   box-shadow: -5px 6px 17px -6px rgba(0, 0, 0, 0.75);
@@ -14,7 +13,6 @@
   background-color: #1c1c1cab;
   padding: 50px;
 }
-
 .flex-container {
   display: flex;
   height: 90vh;
@@ -22,7 +20,6 @@
   background: linear-gradient(to right, #274046, #e6dada);
   background-image: url("../../assets/images/access.jpg");
 }
-
 .centered {
   justify-content: center;
   align-items: center;

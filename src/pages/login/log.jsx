@@ -21,9 +21,7 @@ function LoginCard() {
 
   useEffect(() => {
     if (userPassword.length !== 0) {
-      setValidatePassword(
-        userPassword !== "password" && userPassword.includes(".")
-      );
+      setValidatePassword(userPassword === "password");
     }
   }, [userPassword]);
 
@@ -42,9 +40,7 @@ function LoginCard() {
           <p className="title-form">Login Form</p>
         </div>
         <div className="regla">Username: Admite el valor "username".</div>
-        <div className="regla">
-          Password: Admite el valor "password" seguido de un punto.
-        </div>
+        <div className="regla">Password: Admite el valor "password".</div>
         <div className="inputContainer">
           <input
             className={validateUsername ? "" : "inputError-login"}
@@ -74,7 +70,6 @@ function LoginCard() {
             LOGIN
           </button>
         </Link>
-      
 
         <p className="register-link">
           Don´t have an account?

@@ -6,7 +6,6 @@
   justify-content: center;
   margin: 0 auto;
 }
-
 .text-coin {
   max-width: 600px;
   width: 100%;
@@ -21,7 +20,6 @@
   font-size: 1.3em;
   font-weight: bolder;
 }
-
 .div-coins {
   max-width: 600px;
   width: 100%;
@@ -31,7 +29,6 @@
   justify-content: center;
   margin: 0 auto;
 }
-
 .list-coins {
   display: flex;
   align-items: center;
@@ -42,12 +39,10 @@
 .input-coins {
   width: 15px;
 }
-
-label {
+#label-coins {
   cursor: pointer;
   text-decoration: none;
 }
-
 .item-coins {
   display: flex;
   flex-basis: column;
@@ -56,7 +51,6 @@ label {
   align-items: center;
   text-decoration: none;
 }
-
 .submit-coin {
   background-color: #ec23e6fa;
   height: 30px;
@@ -71,7 +65,6 @@ label {
   color: black;
   font-weight: bold;
 }
-
 @media (max-width: 746px) {
   .list-coins {
     flex-direction: column;

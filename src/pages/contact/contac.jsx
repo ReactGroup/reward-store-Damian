@@ -39,8 +39,8 @@ function Contact() {
             especializarme en desarrollo Web, por cierto mi gran pasión.
           </p>
           <p className="text-paragraph">
-            Gracias a este proyecto y tambien a la incorporacion de otras
-            herramientas adquiridas en mi area de estudio siento estar preparado
+            Gracias a este proyecto y también a la incorporacion de otras
+            herramientas adquiridas en mi área de estudio siento estar preparado
             para dar este paso e insertarme en este nuevo mundo.
           </p>
           <p className="text-paragraph">

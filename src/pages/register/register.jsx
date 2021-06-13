@@ -33,7 +33,7 @@ function Register() {
 
   useEffect(() => {
     if (userName.length !== 0) {
-      setValidateUsername(userName.length > 3 && userName !== "username");
+      setValidateUsername(userName.length > 5);
     }
   }, [userName]);
 
@@ -82,7 +82,7 @@ function Register() {
             id="comment-register"
             className={validateUsername ? " error" : " visible error"}
           >
-            Username debe contener mas de 3 letras
+            Username debe contener mas de 5 letras
           </span>
         </div>
 
