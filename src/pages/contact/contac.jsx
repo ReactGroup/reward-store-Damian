@@ -19,7 +19,7 @@ function Contact() {
             <FontAwesomeIcon icon={faLinkedin} />
           </div>
           <div className="a" style={{ fontSize: "1.5em" }}>
-            <a href="https://github.com/D-Perez85/">Github</a>
+            <a href="https://github.com/ReactGroup/reward-store-Damian/projects/">Github</a>
             <FontAwesomeIcon icon={faGithubSquare} />
           </div>
           <div className="a" style={{ fontSize: "1.5em" }}>

@@ -1,13 +1,11 @@
-import React, { useContext } from "react";
-import { HistoryContext } from "../../context/historyContext";
-import { useEffect, useState } from "react";
+import React, { useState, useEffect } from "react";
+import { headers, API_URL } from "../../header";
 import "./styles.css";
 import coin from "../../assets/icons/coin.svg";
 import Menu from "../../../src/components/menu/menu";
 import Paginator from "../../components/pagination/paginator";
 function History() {
-  const { history } = useContext(HistoryContext);
-  console.log(history) //NO LLEGA EL DATO ACTUALIZADO 
+  const [history, setHistory] = useState([]);
   const [pages, setPages] = useState(0);
   const [current, setCurrent] = useState(0);
   const size = 5;
@@ -16,6 +14,20 @@ function History() {
     setPages(Math.ceil(history.length / size));
     setCurrent(0);
   }, [history.length]);
+
+  useEffect(() => {
+    let peticion = fetch(`${API_URL}/user/history`, {
+      headers,
+    });
+    peticion
+      .then((respuesta) => {
+        return respuesta.json();
+      })
+      .then((data) => {
+        setHistory(data);
+      });
+  }, []);
+
   return (
     <>
       <Menu />
@@ -28,7 +40,6 @@ function History() {
       <div>
         {history.length > 0 &&
           history.slice(current * size, current * size + size).map((item) => {
-            console.log(history)//NO LLEGA EL DATO ACTUALIZADO 
             return (
               <>
                 <div className="history-list" key={item._id}>
